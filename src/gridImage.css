@@ -1,0 +1,99 @@
+:root {
+    /* fonts */
+    --f-family: "Google Sans Code", monospace;
+    /* couleurs */
+    --blanc: #ffffff80;
+    --rose: #ecbec3;
+    --b-rose: #ce4958ea;
+    --vert: #549e6c;
+    --vert-f: #034f03;
+    --jaune: #FFF587;
+}
+
+/* media queries */
+@media (min-width: 1024px) {
+.sectionImages-grid {
+    height: calc(100vh - 4rem);
+    width: 100%;
+    display: grid;
+    grid:
+        "sectionImages-left sectionImages-right" 1fr
+        / 50% 50%;
+
+}
+.sectionImages-left {
+    grid-area: sectionImages-left;
+    background-color: var(--rose);
+    display: grid;
+    grid:
+    "sectionImages-subheading" 30%
+    "sectionImages-content" 1fr
+    / 1fr;
+    place-items: center;
+    padding: 4rem 2rem;
+    position: relative;
+}
+.left-first {
+    background-color: var(--vert);
+}
+    .sectionImages-left img {
+        position: absolute;
+        max-width: 50%;
+        z-index: 0;
+        margin-bottom: 4rem;
+    }
+    /* haut */
+    .sectionImages-subheading {
+        align-self: start;
+        justify-self: start;
+        z-index: 1;
+        font-size: 1rem;
+        grid-area: sectionImages-subheading;
+    }
+    .subheading-title {
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+    /* bas */
+    .sectionImages-content {
+        grid-area: sectionImages-content;
+        font-family: var(--f-family);
+        position: relative;
+        z-index: 1;
+        align-self: end;
+        justify-self: start;
+    }
+    .sectionImages-content h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5rem;
+        text-transform: uppercase;
+        max-width: 500px;
+    }
+    .sectionImages-description {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    .sectionImages-btn {
+        display: inline-block;
+        margin-top: 2rem;
+        background: #000;
+        color: #fff;
+        padding: 1.1rem 2rem;
+    }
+.sectionImages-right {
+   grid-area: sectionImages-right;
+   background-image: url(/img/lingedelit/geomatric.jpg);
+    background:  bottom no-repeat contain;
+}
+.right-first {
+    background-image: url(/img/lingedelit/Paruresdehaut.jpg);
+    background-size: 100%;
+    background-origin: right;
+}
+}
+@media (min-width: 768px) {
+
+}
+@media (max-width: 767px) {
+    
+}

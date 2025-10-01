@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test d'animation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/showcase.css">
+    <link rel="stylesheet" href="/src/gridImage.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="curtain"></div>
+
+    <header class="header">
+        <!-- <button type="button" class="header-burger" aria-label="menu mobile"></button> -->
+        <div class="header-logo">Logo</div>
+        <!-- navigation -->
+        <nav class="header-nav">
+            <ul class="menu menu-container">
+                <li class="menu-link">
+                    <!-- shop -->
+                    <a id="shop" href="/">SHOP</a>
+                    <ul id="shopMenu" class="menu dropdown-child">
+                        <!-- maison -->
+                        <li class="menu-link">
+                            <a href="/"  class="categories">MAISON</a>
+                            <ul class="menu dropdown-grandchild">
+                                <li class="menu-link"><a href="/">Plaids et couvre-lits</a></li>
+                                <li class="menu-link"><a href="/">Parure de lit <span>-10%</span></a></li>
+                                <li class="menu-link"><a href="/">Linge de lit</a></li>
+                                <li class="menu-link"><a href="/">Linge de table</a></li>
+                                <li class="menu-link"><a href="/">Coussins</a></li>
+                                <li class="menu-link"><a href="/">Rideaux</a></li>
+                                <li class="menu-link"><a href="/">Papiers peints</a></li>
+                            </ul>                  
+                        </li>
+                        <!-- vetements -->
+                        <li class="menu-link">
+                            <a href="/" class="categories">VETEMENTS</a>
+                            <ul class="menu dropdown-grandchild">
+                                <li class="menu-link"><a href="/">Kimonos</a></li>
+                                <li class="menu-link"><a href="/">Pyjamas</a></li>
+                                <li class="menu-link"><a href="/">Robes, combinaisons</a></li>
+                                <li class="menu-link"><a href="/">Vestes</a></li>
+                                <li class="menu-link"><a href="/">Chemises, top</a></li>
+                                <li class="menu-link"><a href="/">Pantalons, bas</a></li>
+                                <li class="menu-link"><a href="/">Jupes</a></li>
+                                <li class="menu-link"><a href="/">Foulards, Paréos</a></li>
+                            </ul>                 
+                        </li>
+                        <!-- enfant & bb -->
+                        <li class="menu-link">
+                            <a href="" class="categories">ENFANT &amp; BEBE</a>
+                            <ul class="menu dropdown-grandchild">
+                                <li class="menu-link"><a href="/">Plaids et couvre-lits</a></li>
+                                <li class="menu-link"><a href="/">Tapis d'éveil</a></li>
+                                <li class="menu-link"><a href="/">Lingedelit</a></li>
+                                <li class="menu-link"><a href="/">Coussins</a></li>
+                                <li class="menu-link"><a href="">Pyjamas</a></li>
+                                <li class="menu-link"><a href="/">Jeux, poussettes et accessoires</a></li>
+                                <li class="menu-link"><a href="/">Puériculture</a></li>
+                            </ul>
+                        </li>
+                        <!-- accessoire -->
+                        <li class="menu-link">
+                            <a href="/" class="categories">ACCESSOIRES</a>
+                            <ul class="menu dropdown-grandchild">
+                                <li class="menu-link"><a href="/">Foulards, Paréos</a></li>
+                                <li class="menu-link"><a href="/">Chaussettes</a></li>
+                                <li class="menu-link"><a href="/">Sacs</a></li>
+                                <li class="menu-link"><a href="/">Sacs enfants</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>   
+                <!-- la marque -->
+                <li class="menu-link">
+                    <a id="concept" href="/pages/">CONCEPT</a>
+                    <ul id="conceptMenu" class="menu dropdown-child">
+                        <li class="menu-link on"><a href="/" class="">Qui sommes-nous ? </a></li>
+                        <li class="menu-link on"><a href="/" class="">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <a href="/pages/">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-utils">
+            <!-- langue -->
+            <div class="header-lang">
+                <a fr="" href="#" aria-current="true" hreflang="fr" lang="fr" data-value="fr">Fr</a>
+                <a en="" href="#" hreflang="en" lang="en" data-value="en">En</a>
+                <input type="hidden" name="language-code" value="fr">
+            </div>
+            <!-- recherche -->
+            <div class="header-search">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path class="icon" d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
+                </a>
+            </div>
+            <!-- compte -->
+            <a href="/account/login" class="header-account">Compte</a>
+            <!-- panier -->
+            <span>Panier (0)</span>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="banner">
+            <p>
+                <span>site de test site de test site de test site de test site de test </span>
+                <span>site de test site de test site de test site de test site de test </span>
+                <span>site de test site de test site de test site de test site de test </span>
+                <span>site de test site de test site de test site de test site de test </span>
+                <span>site de test site de test site de test site de test site de test </span>
+            </p>
+        </div>
+
+        <section id="section1" class="sectionImages-grid">
+            <div class="sectionImages-left left-first">
+                <img loading="lazy" src="img/lingedelit/Soizic vertRose.jpg" alt="image de plaids">
+                <div class="sectiobtn-entrancenImages-subheading">
+                    <p class="subheading-title entrance-title">Bienvenue</p>
+                </div>
+                <div class="sectionImages-content">
+                    <h2 class="btn-second">Découvrez</h2>
+                    <a class="sectionImages-btn" href="/collections/plaids">Catalogues</a>
+                </div>
+                    <h2 class="upTitle">
+                        <div class="rotatingText">
+                            <span class="rotatingText-adjective">la marque</span>
+                            <span class="rotatingText-adjective">le concept</span>
+                            <span class="rotatingText-adjective">le catalogue</span>
+                            <span class="rotatingText-adjective">les créateurs</span>
+                            <span class="rotatingText-adjective">notre univers</span>
+                        </div>
+                    </h2>
+                <!-- <div class="sectionImages-content">
+                    <h2>Découvrez la marque</h2>
+                    <a class="sectionImages-btn btn-entrance" href="/collections/plaids">Catalogues</a>
+                </div> -->
+            </div>
+            <div class="sectionImages-right right-first">
+                <!-- texte rotatif -->
+                <div class="rotate">
+                    <svg viewBox="0 0 300 300">
+                        <defs>
+                            <path id="circlePath" d="M150,150 m-100,0 a100,100 0 1,1 200,0 a100,100 0 1,1 -200,0"/>
+                        </defs>
+                        <g class="rotating-text">
+                            <text textLength="628" lengthAdjust="spacingAndGlyphs">
+                                <textPath href="#circlePath">
+                                    &nbsp;Joli texte &#8226; dynamique &#8226;  tournant &#8226; 
+                                </textPath>
+                            </text>
+                        </g>
+                    </svg>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Animation de scroll et parallax -->
+        <section id="section2" class="section">
+            <!-- parallax elements -->
+            <div class="scroll-container container-left">
+                <div class="reveal from-left">
+
+                    <div class="info-card"></div>
+                    <div class="info-card-body">
+                        <h5 class="info-card-title">Card Title one</h5>
+                        <p class="info-card-text">This is a simple information card. This is a simple information card. This is a simple information card. This is a simple information card.</p>
+                        <a href="#" class="btn-reveal">Learn More</a>
+                    </div>
+
+                </div>
+                <div class="reveal from-left">
+                    <div class="info-card"></div>
+                    <div class="info-card-body">
+                        <h5 class="info-card-title">Card Title three</h5>
+                        <p class="info-card-text">This is a simple information card. This is a simple information card. This is a simple information card.</p>
+                        <a href="#" class="btn-reveal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-container container-right">
+                <div class="reveal from-right">
+                    <div class="info-card"></div>
+                    <div class="info-card-body">
+                        <h5 class="info-card-title">Card Title two</h5>
+                        <p class="info-card-text">This is a simple information card. This is a simple information card. This is a simple information card.</p>
+                        <a href="#" class="btn-reveal">Learn More</a>
+                    </div>
+                </div>
+                <div class="reveal from-right">
+                    <div class="info-card"></div>
+                    <div class="info-card-body">
+                        <h5 class="info-card-title">Card Title one</h5>
+                        <p class="info-card-text">This is a simple information card. This is a simple information card. This is a simple information card. This is a simple information card.</p>
+                        <a href="#" class="btn-reveal">Learn More</a>
+                    </div>
+                </div>
+            </div>    
+
+            <!-- <div class="parallax-container">
+                <div class="layer back">Arrière-plan</div>
+                <div class="layer mid">Texte ou image</div>
+                <div class="layer front">Premier-plan</div>
+            </div> -->
+
+        </section>
+        <!-- Showcase products -->
+        <section id="section3" class="showcase-products">
+            <h2 class="showcase-title">tout le Lingedelit</h2>
+            <!-- jaune -->
+            <article class="productThumb">
+                <!-- pc -->
+                <a class="productThumb-media" href="/products/">
+                    <img loading="lazy" src="img/lingedelit/LaRedouteJaune.jpg" srcset="img/lingedelit/LaRedouteJaune.jpg" alt="Housse de couette">
+                    
+                    <img loading="lazy" class="productThumb-hover" src="img/lingedelit/LaRedouteJauneZoom.jpg" srcset="" alt="Housse de couette en situation"> 
+                </a>
+                <!-- mobile -->
+                <a class="productThumb-media-mobile" href="/products/">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide">
+                            <img loading="lazy" src="" srcset="er&a" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                            <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                            <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                            <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                            <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                            <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </a>
+                <!-- détails -->
+                <a class="productThumb-details" href="/products/">
+                    <h3 class="productThumb-title">
+                        <span class="h3">Housse de couette</span>
+                        <span class="productThumb-info">Veldi Jaune</span>
+                    </h3>
+                    <span class="productThumb-price">
+                    À partir de 80,00 €
+                    </span>
+                </a>
+            </article>
+            <!-- vert -->
+            <article class="productThumb">
+                <!-- pc -->
+                <a class="productThumb-media" href="/products/">
+                    <img loading="lazy" src="img/lingedelit/LaRedouteVert.jpg" srcset="img/lingedelit/LaRedouteVert.jpg" alt="Housse de couette">
+                    
+                    <img loading="lazy" class="productThumb-hover" src="img/lingedelit/LaRedouteVertZoom.jpg" srcset="img/lingedelit/LaRedouteVertZoom.jpg" alt="Housse de couette">
+                </a>
+                <!-- mobile -->
+                <a class="productThumb-media-mobile" href="/products/">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="" height="400" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                            </div>
+                        
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </a>
+                <!-- détails -->
+                <a class="productThumb-details" href="/products/">
+                    <h3 class="productThumb-title">
+                        <span class="h3">Housse de couette</span>
+                        <span class="productThumb-info">Veldi Vert</span>
+                    </h3>
+                    <span class="productThumb-price">
+                    À partir de 80,00 €
+                    </span>
+                </a>
+            </article>
+            <!-- bleu -->
+            <article class="productThumb">
+                <!-- pc -->
+                <a class="productThumb-media" href="/products/">
+                    <img loading="lazy" src="img/lingedelit/LaRedouteBleu.jpg" srcset="img/lingedelit/LaRedouteBleu.jpg" alt="Housse de couette">
+                    
+                    <img loading="lazy" class="productThumb-hover" src="img/lingedelit/LaRedouteOreillerBleu.jpg" srcset="img/lingedelit/LaRedouteBleuOreiller.jpg" alt="Housse de couette en situation">
+
+                </a>
+                <!-- mobile -->
+                <a class="productThumb-media-mobile" href="/products/housse-de-couetter">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    
+                        <div class="swiper-slide">
+                        <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                        </div>
+                    
+                        <div class="swiper-slide">
+                        <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                        </div>
+                    
+                        <div class="swiper-slide">
+                        <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                        </div>
+                    
+                        <div class="swiper-slide">
+                        <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                        </div>
+                    
+                        <div class="swiper-slide">
+                        <img loading="lazy" src="" srcset="" alt="Housse de couette">
+                        </div>
+                    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                </a>
+                <!-- détails -->
+                <a class="productThumb-details" href="/products/housse-de-couette-rose-flower">
+                    <h3 class="productThumb-title">
+                        <span class="h3">Housse de couette</span>
+                        <span class="productThumb-info">Veldi Bleu</span>
+                    </h3>
+                    <span class="productThumb-price">
+                    À partir de 80,00 €
+                    </span>
+                </a>
+            </article>
+        </section>
+
+        <section id="section4" class="sectionImages-grid">
+            <!-- left -->
+            <div class="sectionImages-left">
+                <img loading="lazy" src="img/lingedelit/Tabaka rougeRose.jpg" alt="image de plaids">
+                <div class="sectionImages-subheading">
+                    <p class="subheading-title">Parrure</p>
+                </div>
+                
+                <div class="sectionImages-content">
+                    <h2>Les parrures</h2>
+                    <p class="sectionImages-description">En coton recyclé et colorés</p>
+                    <a class="sectionImages-btn" href="/collections/plaids">Tous les ensembles</a>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="sectionImages-right">
+            </div>
+        </section>
+
+        <section id="section5" class="sectionImages-grid">
+            <div class="sectionImages-left side-left5">
+                <div class="pushImage-left"></div>
+            </div>
+            <div class="sectionImages-right side-right5">              
+                <div class="push-content">
+                    <div class="pushImage-title">
+                        <h2>RENDEZ-VOUS À LA BOUTIQUE</h2>
+                    </div>
+                
+                    <div class="pushImage-text">
+                        <p>Du lundi au samedi </p>
+                        <p>11h - 19h</p>
+                        <p><span>21 Rue Mandelot, 69007 Lyon</span></p>
+                    </div>
+                
+                    <div class="pushImage-ctas">
+                        <a rel="noopener" target="_blank" href="https://maps.app.goo.gl/">Venir à la boutique</a> 
+                        <a href="/pages/la-marque" class="ctas-bottom">En savoir plus sur la marque</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>
