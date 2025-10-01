@@ -82,11 +82,11 @@
     }
 .sectionImages-right {
    grid-area: sectionImages-right;
-   background-image: url(/img/lingedelit/geomatric.jpg);
+   background-image: url(../img/lingedelit/geomatric.jpg);
     background:  bottom no-repeat contain;
 }
 .right-first {
-    background-image: url(/img/lingedelit/Paruresdehaut.jpg);
+    background-image: url(../img/lingedelit/Paruresdehaut.jpg);
     background-size: 100%;
     background-origin: right;
 }
