@@ -26,3 +26,5 @@ git clone https://github.com/BuonomoLea/Inspiration-e-shop.git
 Ce projet a été développé par moi-même. Si vous souhaitez l'utiliser ou l'améliorer, n'hésitez pas à le faire !
 
 ## Licence
+Ce projet est sous la **MIT License**.  
+Copyright (c) 2025 Léa.
