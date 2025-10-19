@@ -1,4 +1,4 @@
-# Inspiration e-shop
+# Template inspiration e-shop
 
 ## Démo Live
 [Voir la démo en ligne](https://buonomolea.github.io/Inspiration-e-shop/)
